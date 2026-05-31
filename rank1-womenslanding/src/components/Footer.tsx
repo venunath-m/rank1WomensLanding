@@ -24,11 +24,11 @@ export default function Footer() {
 
                         {/* Headline matching image custom text coloring */}
                         <h2 className="text-[28px] sm:text-[36px] lg:text-[44px] leading-[110%] font-black uppercase tracking-tight max-w-[400px]">
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFA0A0] to-[#A0C8FF]">
-                                Rank 1 Kids
+                            <span className="text-white uppercase bg-clip-text bg-gradient-to-r from-[#FFA0A0] to-[#A0C8FF]">
+                                Rank 1 Women -
                             </span><br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFA0A0] to-[#A0C8FF]"> Fun Fashion At</span><br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFA0A0] to-[#A0C8FF]">Smart Prices</span>
+                            <span className="text-white uppercase"> Trendy Fashion</span><br />
+                            <span className="text-white uppercase">At Smart Prices</span>
                         </h2>
                     </div>
 
