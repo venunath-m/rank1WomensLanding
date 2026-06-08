@@ -2,19 +2,13 @@ import { useEffect, useRef } from "react";
 
 import bg from "../assets/herobackground/hero1.jpg";
 
-import img1 from "../assets/heroImagesScroll/1.jpg";
-import img2 from "../assets/heroImagesScroll/2.jpg";
-import img3 from "../assets/heroImagesScroll/3.jpg";
-import img4 from "../assets/heroImagesScroll/4.jpg";
-import img5 from "../assets/heroImagesScroll/5.jpg";
-import img6 from "../assets/heroImagesScroll/6.jpg";
-import img7 from "../assets/heroImagesScroll/7.jpg";
-import Navbar from "./Navbar";
+
+
 
 export default function Hero() {
     const scrollRef = useRef<HTMLDivElement>(null);
 
-    const images = [img1, img2, img3, img4, img5, img6, img7];
+
 
     useEffect(() => {
         const el = scrollRef.current;
@@ -89,7 +83,7 @@ export default function Hero() {
     }, []);
 
     return (
-        <section className="relative w-full min-h-[85vh] lg:min-h-[90vh] overflow-hidden">
+       <section className="relative w-full pt-12 md:pt-16 pb-12 min-h-[85vh] lg:min-h-[90vh] overflow-hidden overflow-x-hidden">
 
             {/* BACKGROUND */}
             <div className="absolute inset-0 z-0 overflow-hidden">
@@ -105,7 +99,7 @@ export default function Hero() {
             <div className="absolute inset-0 bg-black/20 z-10" />
             {/* WATERMARK */}
             <div className="relative inset-0 z-[15] flex items-center justify-center pointer-events-none ">
-                <div className="flex items-center gap-20 select-none translate-y-[80px]">
+                <div className="flex items-center gap-6 sm:gap-10 lg:gap-20 select-none translate-y-[40px] sm:translate-y-[60px] lg:translate-y-[80px]">
 
                     <h1
                         className="
@@ -147,39 +141,39 @@ export default function Hero() {
         </div> */}
 
             {/* HERO CONTENT */}
-            <div
-    className="
-        relative z-20
-        min-h-[85vh] lg:min-h-[90vh]
-        flex items-center
-        w-full
-        pl-6 pr-20
-    "
+          <div
+  className="
+    relative z-20
+    min-h-[85vh] lg:min-h-[90vh]
+    flex items-center
+    w-full
+    px-4 sm:px-6 lg:pl-6 lg:pr-20
+  "
 >
 
                 {/* BRAND HEADINGS & TEXT BLOCK */}
-                <div className="flex flex-col items-start text-left w-full max-w-[720px] gap-3 md:gap-4">
-                   <h1 className="font-sans font-semibold text-[32px] sm:text-[42px] lg:text-[56px] leading-[105%] tracking-[-0.04em] uppercase text-white">
+                <div className="flex flex-col items-start text-left w-full max-w-[720px] gap-2 sm:gap-3 md:gap-4">
+                   <h1 className="font-sans font-semibold text-[26px] sm:text-[34px] md:text-[42px] lg:text-[56px] leading-[105%] tracking-[-0.04em] uppercase text-white">
     EVERYDAY FASHION
 </h1>
 
-<h1 className="font-sans font-semibold text-[32px] sm:text-[42px] lg:text-[56px] leading-[105%] tracking-[-0.04em] uppercase text-white">
+<h1 className="font-sans font-semibold text-[26px] sm:text-[34px] md:text-[42px] lg:text-[56px] leading-[105%] tracking-[-0.04em] uppercase text-white">
      FOR MODERN WOMEN
 </h1>
 
 
 
-                    <p className="font-sans font-semibold text-[18px] sm:text-[18px] lg:text-[24px] leading-[140%] text-white max-w-[620px] mt-2 px-2">
+                    <p className="font-sans font-semibold text-[14px] sm:text-[16px] lg:text-[24px] leading-[150%] text-white max-w-[620px] mt-2 px-0 sm:px-2">
                         Discover trendy, comfortable, and budget-friendly styles, made, for everyday life.
                     </p>
 
-                    <div className="mt-4 md:mt-6 flex justify-start">
-                        <div className="rounded-[10px] border border-[#DDDDDD] p-1 bg-transparent">
-                            <button className="w-[200px] sm:w-[236px] h-[48px] md:h-[56px] bg-black text-white rounded-[6px] text-[15px] md:text-[16px] font-bold uppercase tracking-wider flex items-center justify-center transition-all duration-300 hover:bg-red-500">
-                                View New Arrivals
-                            </button>
-                        </div>
-                    </div>
+                    <div className="mt-4 md:mt-6 flex justify-start w-full sm:w-auto">
+  <div className="rounded-[10px] border border-[#DDDDDD] p-1 bg-transparent w-full sm:w-auto">
+    <button className="w-full sm:w-[236px] h-[48px] md:h-[56px] bg-black text-white rounded-[6px] text-[14px] sm:text-[16px] font-bold uppercase tracking-wider flex items-center justify-center transition-all duration-300 hover:bg-red-500">
+      View New Arrivals
+    </button>
+  </div>
+</div>
                 </div>
 
                 {/* SCROLL STRIP */}

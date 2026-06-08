@@ -4,7 +4,7 @@ import CategorySection from "../components/CategorySection";
 import WhyShop from "../components/WhyShop";
 import FeaturedCollections from "../components/FeaturedCollections";
 import ValueForMoney from "../components/ValueForMoney";
-import PlayComfort from "../components/PlayComfort";
+
 import Testimonials from "../components/Testimonials";
 import StoreSection from "../components/StoreSection";
 import Footer from "../components/Footer";

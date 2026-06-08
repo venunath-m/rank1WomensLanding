@@ -118,7 +118,7 @@ export default function Footer() {
 
                     <div className="relative max-w-[1376px] mx-auto min-h-[322px] px-8 pb-6 flex items-center lg:items-end">
 
-                        <div className="flex items-center lg:items-end justify-start gap-4 w-full">
+                       <div className="flex items-center lg:items-end justify-center lg:justify-start gap-4 w-full">
 
                             <h1
                                 className="text-[21vw] font-black uppercase leading-[0.75] text-white/15 mix-blend-overlay tracking-[-0.01em] translate-y-[2.5vw]"
